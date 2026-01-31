@@ -35,3 +35,44 @@ IT23177246PlayWrite-ITPM-Assignment-01/
 ├─ package.json
 ├─ playwright.config.js
 └─ README.md
+
+▶️ VS Code Run Instructions
+
+Open the repository folder in Visual Studio Code.
+
+Open a terminal and make sure you are in the project root folder.
+
+Ensure Node.js is installed:
+
+node -v
+npm -v
+
+
+If Node.js is not installed, download and install it from:
+https://nodejs.org/
+
+Install project dependencies:
+npm install
+
+Run all Playwright tests:
+
+npx playwright test --workers=1
+To view the HTML report after running tests:
+
+npx playwright show-report
+
+▶️ Run Tests Individually (Terminal Commands)
+Run UI Test Cases
+npx playwright test tests/ui --workers=1
+
+Run Positive Functional Test Cases
+npx playwright test tests/positive_function --workers=1
+
+Run Negative Functional Test Cases
+npx playwright test tests/negative_function --workers=1
+
+Run a Single Functional Test File (Example)
+npx playwright test tests/positive_function/pos-fun-0020.spec.js --workers=1
+
+Run a UI Test in Headed Mode (Browser Visible)
+npx playwright test tests/ui/IT23177246-Pos-UI-0001.spec.js --workers=1 --headed
