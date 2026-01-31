@@ -36,14 +36,12 @@ IT23177246PlayWrite-ITPM-Assignment-01/
 ├─ playwright.config.js
 └─ README.md
 
-## ▶️ How to Run the Project (VS Code & Terminal)
+▶️ How to Run the Project (VS Code & Terminal)
 
 Open a terminal and make sure you are inside the **project root folder**.
 
----
 
-### 🔹 Ensure Node.js is Installed
-```bash
+🔹 Ensure Node.js is Installed
 node -v
 npm -v
 If Node.js is not installed, download and install it from:
